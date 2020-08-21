@@ -1,19 +1,21 @@
 {
-	"name": "Hello Extensions",
-	"description": "Hello world Extension",
+	"name": "Getting Started Example",
 	"version": "1.0",
+	"description": "Build an Extension!",
 	"manifest_version": 2,
 	"browser_action": {
-		"default_popup": "hello.html",
-		"default_icon": "hello.png"
+		"default_icon": "hello.png",
+		"default_popup": "hello.html"
 	},
-	"commands": {
-		"_execute_browser_action": {
-			"suggested_key": {
-				"default": "Ctrl+Shift+F",
-				"mac": "MacCtrl+Shift+F"
-			},
-			"description": "Opens hello.html"
+	"background": { "scripts": ["background.js"] },
+	"content_scripts": [
+		{
+			"matches": [
+				"https://jwxk-443.webvpn.jnu.edu.cn/xsxkapp/sys/xsxkapp/*"
+			],
+			"js": [
+				"main.js"
+			]
 		}
-	}
+	]
 }
