@@ -1,17 +1,16 @@
 {
-	"name": "Getting Started Example",
+	"name": "jnuLessonGet",
 	"version": "1.0",
-	"description": "Build an Extension!",
+	"description": "Good luck!",
 	"manifest_version": 2,
 	"browser_action": {
-		"default_icon": "hello.png",
-		"default_popup": "hello.html"
+		"default_icon": "hello.png"
 	},
-	"background": { "scripts": ["background.js"] },
 	"content_scripts": [
 		{
 			"matches": [
-				"https://jwxk-443.webvpn.jnu.edu.cn/xsxkapp/sys/xsxkapp/*"
+				"https://jwxk-443.webvpn.jnu.edu.cn/xsxkapp/sys/xsxkapp/*",
+				"https://jwxk.jnu.edu.cn/xsxkapp/sys/xsxkapp/*"
 			],
 			"js": [
 				"main.js"
