@@ -4,7 +4,7 @@
 
 Download code and install this Chrome extention.
 
-![step]https://raw.githubusercontent.com/ywmuazz/jnuLessonGet/master/step.png
+![step.png](https://raw.githubusercontent.com/ywmuazz/jnuLessonGet/master/step.png)
 
 
 ## Hint
